@@ -6,13 +6,13 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 
 app.use(cors())
-app.use(function (req, res, next) {
-    res.setHeader("Access-Control-Allow-Origin", "*")
-    res.header("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE")
-    res.header("Access-Control-Allow-Headers", "Origin,X-Requested-With,Content-Type,Accept,x-access-token,x-refresg-token,_id,Authorization")
-    res.header("Access-Control-Expose-Headers", "x-access-token", "x-refresg-token")
-    next()
-})
+// app.use(function (req, res, next) {
+//     res.setHeader("Access-Control-Allow-Origin", "*")
+//     res.header("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE")
+//     res.header("Access-Control-Allow-Headers", "Origin,X-Requested-With,Content-Type,Accept,x-access-token,x-refresg-token,_id,Authorization")
+//     res.header("Access-Control-Expose-Headers", "x-access-token", "x-refresg-token")
+//     next()
+// })
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
