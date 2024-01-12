@@ -18,6 +18,6 @@ const ProductImageModel = conn.define('productImages', {
         type: DataTypes.BOOLEAN,
     },
 })
-ProductImageModel.sync({ alter: true })
+// ProductImageModel.sync({ alter: true })
 
 module.exports = ProductImageModel;

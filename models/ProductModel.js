@@ -28,7 +28,7 @@ const ProductModel = conn.define('products', {
 
 })
 
-ProductModel.sync({ alter: true })
+// ProductModel.sync({ alter: true })
 
 
 module.exports = ProductModel;

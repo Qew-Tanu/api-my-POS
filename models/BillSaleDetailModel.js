@@ -26,7 +26,7 @@ const BillSaleDetailModel = conn.define('billsaledetail', {
 
 })
 
-BillSaleDetailModel.sync({ alter: true })
+// BillSaleDetailModel.sync({ alter: true })
 
 
 module.exports = BillSaleDetailModel;

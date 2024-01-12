@@ -28,7 +28,7 @@ const MemberModel = conn.define('members', {
 
 })
 
-MemberModel.sync({ alter: true })
+// MemberModel.sync({ alter: true })
 
 
 module.exports = MemberModel;
